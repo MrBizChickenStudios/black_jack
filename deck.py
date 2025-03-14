@@ -7,14 +7,14 @@ class Card():
         self.suite = suite
 
     def get_card(self):
-        return f"card face {self.face} card vaule {self.vaule} card suite {self.suite}"
+        return f"{self.face} of {self.suite}"
 
 class Deck():
     def __init__(self):
         self.deck = []
         self.faces = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"]
         self.vaules = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
-        self.suites = ["Diamond", "Spade", "Club", "Heart"]
+        self.suites = ["Diamonds", "Spades", "Clubs", "Hearts"]
     def make_deck(self):
         for face in range(len(self.faces)):
             for suite in self.suites:
